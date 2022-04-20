@@ -1,23 +1,19 @@
-import { View, Text } from 'react-native';
-import React from 'react';
-import Login from './src/screens/Login';
-import Sign from '../Task/src/screens/Sign';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import forgot from './src/screens/forgot';
+import { View, SafeAreaView, Text } from 'react-native'
+import React from 'react'
+import Screen1 from './src/screens/Screen1/Screen1'
+import Screen2 from './src/screens/Screen2/Screen2'
+import Screen3 from './src/screens/Screen3/Screen3'
 
-const Stack = createNativeStackNavigator();
-
-const App = () =>{
-  return(
-    <NavigationContainer>
-    <Stack.Navigator screenOptions={{headerShown:false}}>
-     <Stack.Screen name="Login" component={Login} />
-      <Stack.Screen name="Sign" component={Sign} />
-      {/* <Stack.Screen name="forgot" component={forgot}/> */}
-    </Stack.Navigator>
-  </NavigationContainer>
-  );
+const App = () => {
+  return (
+    <SafeAreaView>
+      <View>
+        {/* <Screen1/> */}
+        {/* <Screen2/> */}
+        <Screen3/>
+      </View>
+      </SafeAreaView>
+  )
 };
 
-export default App;
+export default App
