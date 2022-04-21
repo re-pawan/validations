@@ -64,7 +64,7 @@ const Screen3 = () => {
                     <View style={styles.cart_bubble}>
                         <View style={{ height: height * 0.08, }}>
                             <TouchableOpacity>
-                                <Image style={{ height: height * 0.05, width: width * 0.11 }}
+                                <Image style={{ height: height * 0.06, width: width * 0.11 }}
                                     source={require('../../assets/image/cart.png')}
                                 />
                             </TouchableOpacity>
@@ -116,8 +116,8 @@ export default Screen3;
 
 const styles = StyleSheet.create({
     container: {
-        height: height * 1,
-        width: width * 1,
+        height: "100%",
+        width: "100%",
         // backgroundColor: 'lightgrey'
     },
     header: {
